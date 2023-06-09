@@ -20,7 +20,7 @@ let NavItem = {
   second: [
     {
       icon: <MusicalNoteIcon className="w-full h-full" />,
-      text: 'Help',
+      text: 'Music',
       url: '/music'
     }
   ]

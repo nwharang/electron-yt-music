@@ -69,8 +69,8 @@ if (!gotTheLock) {
 
     appWindows.main.webContents.once("did-finish-load", () => {
 
-      expressApp.get('/video/:url', async (req, res, next) => {
-        ytdl(req.params.url, { filter: 'audioonly' })
+      expressApp.get('/video/:url', async (req, res) => {
+        ytdl(req.params.url, { filter: 'audioonly', highWaterMark: 1 << 25 })
           .pipe(res)
       })
 

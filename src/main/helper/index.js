@@ -1,7 +1,6 @@
 import { ipcMain, nativeTheme } from 'electron'
 import os from 'os'
 import Search from './search'
-import Stream from './stream'
 
 const Helper = (win, app, renderer) => {
   if (!win) return
@@ -45,10 +44,6 @@ const Helper = (win, app, renderer) => {
     {
       eventName: 'search',
       eventHandler: async (event, args) => Search(args)
-    },
-    {
-      eventName: 'stream',
-      eventHandler: async (event, args) => Stream(args)
     },
   ].map((event) => {
     ipcMain.handle(event.eventName, event.eventHandler)

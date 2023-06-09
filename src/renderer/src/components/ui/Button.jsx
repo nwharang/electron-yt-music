@@ -4,7 +4,7 @@ const Button = ({ children, onClick }) => {
   return (
     <button
       onClick={onClick}
-      className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium 
+      className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium 
     text-gray-800 dark:text-gray-300 
     rounded-full group bg-gradient-to-br 
     from-pink-500  to-orange-400 

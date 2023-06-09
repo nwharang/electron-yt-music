@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      sans: ['Poppins', 'sans-serif']
+      sans: ['Open Sans', 'sans-serif']
     },
     animation: {
       slidein: 'slidein 0.5s ease-out alternate'
@@ -19,5 +19,5 @@ module.exports = {
       '100%': { transform: 'translateX(0%)', opacity: 1 }
     }
   },
-  plugins: [require("daisyui")]
+  plugins: [require("daisyui"), require('tailwind-scrollbar')({ nocompatible: true })]
 }
