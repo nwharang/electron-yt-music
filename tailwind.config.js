@@ -19,5 +19,12 @@ module.exports = {
       '100%': { transform: 'translateX(0%)', opacity: 1 }
     }
   },
-  plugins: [require("daisyui")]
+  plugins: [require('daisyui')],
+  theme: {
+    extend: {
+      backgroundImage: {
+        loading: "url('https://img.freepik.com/free-vector/musical-notes-frame-with-text-space_1017-32857.jpg?w=2000')"
+      }
+    }
+  }
 }
